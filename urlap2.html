@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus2.css">
+    <title>Űrlap</title>
+</head>
+
+<body>
+    <form>
+        <h2>Alapadatok</h2>
+        <fieldset>
+            <label for="nev">Teljes neved</label>
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <label for="nem">Nemed</label>
+            <label for="ferfi">Férfi</label>
+            <input type="radio" id="ferfi" name="gender" value="ferfi">
+            <label for="no">Nő</label>
+            <input type="radio" id="no" name="gender" value="no">
+        </fieldset>
+        <fieldset>
+            <label for="email">Email</label>
+            <input type="email">
+        </fieldset>
+        <fieldset>
+            <label for="telefonszam">Telefonszám</label>
+            <input list="telefonszam" name="telefonszam">
+            <datalist id="telefonszam">
+                <option value="+36">
+            </datalist>
+            <input type="tel">
+        </fieldset>
+        <fieldset>
+            <label for="levelezes">Levelezés alapértelmezett nyelve</label>
+            <input list="levelezes" name="levelezes">
+            <datalist id="levelezes">
+                <option value="Magyar">
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <label for="szuletesnap">Születési idő</label>
+            <input list="ev" name="ev" placeholder="Év">
+            <datalist id="ev">
+                <option value="2000">
+                <option value="2001">
+                <option value="2002">
+                <option value="2003">
+                <option value="2004">
+                <option value="2005">
+                <option value="2006">
+                <option value="2007">
+                <option value="2008">
+                <option value="2009">
+                <option value="2010">
+                <option value="2011">
+            </datalist>
+            <input list="honap" name="honap" placeholder="Hónap">
+            <datalist id="honap">
+                <option value="Január">
+                <option value="Február">
+                <option value="Március">
+                <option value="Április">
+                <option value="Május">
+                <option value="Június">
+                <option value="Július">
+                <option value="Augusztus">
+                <option value="Szeptember">
+                <option value="Október">
+                <option value="November">
+                <option value="December">
+            </datalist>
+            <input list="nap">
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Mentés">
+        </fieldset>
+    </form>
+</body>
+
+</html>
